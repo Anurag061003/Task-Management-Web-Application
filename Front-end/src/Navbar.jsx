@@ -26,19 +26,18 @@ function NavBar() {
     <>
       <Navbar
         expand="lg"
-        bg="dark"
+        bg="primary"
         variant="dark"
         className="shadow-lg py-3"
-        style={{ background: "linear-gradient(90deg, #1a1a1a, #343a40)" }}
       >
         <Container>
           <Navbar.Brand
   onClick={() => navigate("/tasks")}
   style={{ cursor: "pointer", fontWeight: "bold", fontSize: "1.5rem" }}
 >
-  <span style={{ color: "#0d6efd" }}>Smart</span> &{" "}
+  <span style={{ color: "#171718" }}>Smart</span> &{" "}
   <span style={{ color: "#2ffca7" }}>Faster</span>{" "}
-  <span style={{ color: "#0d6efd" }}>Task</span> Manager
+  <span style={{ color: "#171718" }}>Task</span> Manager
 </Navbar.Brand>
 
 
@@ -47,7 +46,7 @@ function NavBar() {
             <Nav className="me-auto">
               <Nav.Link
                 onClick={() => navigate("/tasks")}
-                className="text-light mx-2 nav-link-hover"
+                className="text-light mx-2 ms-3 nav-link-hover"
               >
                 Task List
               </Nav.Link>
@@ -61,18 +60,18 @@ function NavBar() {
 
             {isLoggedIn && (
               <div className="d-flex align-items-center">
-                <span className="text-white me-3 fw-bold">
+                <span className="text-white me-3 fw-bolder fs-5">
   Welcome Back !
 </span>
 
                 <div
-                  className="text-center"
+                  className="text-center ms-3"
                   style={{ cursor: "pointer" }}
                   onClick={() => setShowLogoutModal(true)}
                   title="Logout"
                 >
                   <BiLogOut size={25} style={{ color: "white" }} />
-                  <div style={{ color: "white", fontSize: "12px" }}>Logout</div>
+                  <div style={{ color: "white", fontSize: "14px" }}>Logout</div>
                 </div>
               </div>
             )}
