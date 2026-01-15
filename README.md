@@ -47,10 +47,10 @@ npm run dev
 
 ### 1. User Routes
 
-| Method | Endpoint   | Description                  |
-|--------|-----------|------------------------------|
-| POST   | /register | Register a new user          |
-| POST   | /login    | Login user and return JWT    |
+| Method | Endpoint       | Description                  |
+|--------|-----------     |------------------------------|
+| POST   | /auth/register | Register a new user          |
+| POST   | /auth/login    | Login user and return JWT    |
 
 ### 2. Task Routes (Requires JWT)
 
@@ -58,7 +58,7 @@ npm run dev
 |--------|----------------|------------------------------------|
 | GET    | /tasks         | Get all tasks for the logged-in user |
 | POST   | /tasks         | Create a new task                  |
-| PATCH  | /tasks/:id     | Update a task (e.g., mark completed) |
+| PUT    | /tasks/:id     | Update a task (e.g., mark completed) |
 | DELETE | /tasks/:id     | Delete a task                      |
 
 > **Note:**  
