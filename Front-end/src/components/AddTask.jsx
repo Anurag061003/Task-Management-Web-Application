@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import NavBar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
 
-const apiUrl = "https://task-management-backend-5wdj.onrender.com";
+const apiUrl = "https://task-management-backend-pu7x.onrender.com";
 
 export default function AddTask() {
   const token = localStorage.getItem("token");
