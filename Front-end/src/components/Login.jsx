@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Spinner, Alert, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-const apiUrl ="https://task-management-backend-5wdj.onrender.com";
+const apiUrl ="https://task-management-backend-pu7x.onrender.com";
 
 const Login = () => {
   const navigate = useNavigate();
