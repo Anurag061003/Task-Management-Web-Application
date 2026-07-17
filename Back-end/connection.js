@@ -1,11 +1,10 @@
-const mongoose= require('mongoose');
-async function connect(){
-    try{
-        await mongoose.connect('mongodb://localhost:27017/Task-Manager');
-        console.log("database connected");
+const mongoose = require('mongoose');
 
-    }catch(err){
-        console.log(err)
+async function connect() {
+    try {
+        await mongoose.connect(process.env.MONGO_URI);
+    } catch (err) {
+        console.error("Database connection error:", err.message);
     }
 }
-module.exports=connect;
+module.exports = connect;
