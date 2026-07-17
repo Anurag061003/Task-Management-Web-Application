@@ -3,7 +3,7 @@ import axios from "axios";
 import { Spinner, Button, Modal } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Navbar.jsx";
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = "https://task-management-backend-5wdj.onrender.com";
 
 const TaskList = () => {
   const navigate = useNavigate();
