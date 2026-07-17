@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Spinner, Alert, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl ="https://task-management-backend-5wdj.onrender.com";
 
 const Login = () => {
   const navigate = useNavigate();
